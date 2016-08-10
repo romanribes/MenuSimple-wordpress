@@ -1,0 +1,35 @@
+
+INSTALACIÓ-
+
+	Descromprimir directament en la carpeta de plugins, no funciona pujant-lo per el wordpress...
+
+CONFIGURACIÓ-
+
+	Per configurar aquest modul, sols necesites saber el identificador de cada pestaña del 
+	menu que volem ocultar al client per llevarli maretjos.
+
+	Per coneixer aquest identificador ta sols necesites utilitzar el inspeccionador del navegador,
+	boto dret inspeccionar elemento... i buscar el atribut id="..." de el element <li> </li>:
+
+	Tal cual aixina: <li id="identificador_unic"> .... contingut ... </li>
+
+EXEMPLES-
+
+	En el cas del exemple el identificador es : "identificador_unic", per lo cual, en el ficher 
+	/styles/custom.css escriuriem el seguent:
+
+		#identificador_unic {display:none;}
+
+	Aquest linea per cada un dels items del menu que volem ocultar (Cuant estiga el modul actiu).
+
+	Quedaria aixi:
+
+		#identificador_unic1 {display:none;}
+		#identificador_unic2 {display:none;}
+		#identificador_unic3 {display:none;}
+		#identificador_unic4 {display:none;}
+		
+	Tambe es pot escriure aixi:
+
+		#identificador_unic1, #identificador_unic2, #identificador_unic3, #identificador_unic4 {display:none;}
+	
